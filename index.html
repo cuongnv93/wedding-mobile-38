@@ -2553,7 +2553,8 @@
         #FORM_ITEM7 .ladi-form-item,
         #FORM_ITEM11 .ladi-form-item,
         #FORM_ITEM12 .ladi-form-item,
-        #FORM_ITEM13 .ladi-form-item {
+        #FORM_ITEM13 .ladi-form-item,
+        #FORM_ITEM14 .ladi-form-item {
             background-image: none !important;
         }
 
@@ -4105,7 +4106,7 @@
 
         #BOX20 {
             width: 358px;
-            height: 571px;
+            height: 650px;
             top: 27px;
             left: 31px;
         }
@@ -4185,7 +4186,7 @@
         #BUTTON10 {
             width: 340.82px;
             height: 40px;
-            top: 298.508px;
+            top: 365.508px;
             left: 0.09px;
         }
 
@@ -4267,6 +4268,11 @@
             height: 35px;
         }
 
+        #FORM_ITEM14 {
+            width: 341px;
+            height: 35px;
+        }
+
         #FORM_ITEM12 {
             top: 62.1803px;
             left: 0px;
@@ -4277,10 +4283,15 @@
             left: 0px;
         }
 
+        #FORM_ITEM14 {
+            top: 300px;
+            left: 0px;
+        }
+
         #BUTTON11 {
             width: 341px;
             height: 40px;
-            top: 348.508px;
+            top: 425.508px;
             left: 0px;
         }
 
@@ -5592,7 +5603,7 @@
                 </div>
             </div>
         </div>
-        <div id="SECTION7" class='ladi-section'>
+        <div id="SECTION7" class='ladi-section' style="top: -40px">
             <div class='ladi-section-background'></div>
             <div class="ladi-container">
                 <div id="BOX20" class='ladi-element'>
@@ -5606,9 +5617,9 @@
                 </div>
                 <div id="GROUP31" class='ladi-element'>
                     <div class='ladi-group'>
-                        <div id="FORM4" is_auto_funnel="" data-config-id="68a99368f05fbb0012f681ba"
+                        <div id="FORM4" is_auto_funnel="" data-config-id="68a99368f05fbb0012f681ba11"
                             class='ladi-element'>
-                            <form autocomplete="off" method="post" class='ladi-form'>
+                            <form id="form-loi-chuc-1" autocomplete="off" method="post" class='ladi-form'>
                                 <div id="BUTTON10" class='ladi-element'>
                                     <div class='ladi-button'>
                                         <div class="ladi-button-background"></div>
@@ -5620,9 +5631,9 @@
                                 <div id="FORM_ITEM7" class='ladi-element'>
                                     <div class="ladi-form-item-container">
                                         <div class="ladi-form-item-background"></div>
-                                        <div class='ladi-form-item'><input autocomplete="off" tabindex="1" name="name"
-                                                required class="ladi-form-control" type="text" placeholder=""
-                                                value="" /></div>
+                                        <div class='ladi-form-item'><input id="name" autocomplete="off" tabindex="1"
+                                                name="name" required class="ladi-form-control" type="text"
+                                                placeholder="" value="" /></div>
                                     </div>
                                     <div id="FORM_ITEM_LABEL7" class='ladi-element ladi-input-label'>
                                         <p class='ladi-headline'>Tên của bạn:</p>
@@ -5653,7 +5664,7 @@
                                         <div class="ladi-form-item-background"></div>
                                         <div class='ladi-form-item'><select tabindex="3" name="form_item12"
                                                 class="ladi-form-control ladi-form-control-select" data-selected="">
-                                                <option value="">Có, Tôi sẽ đến :3</option>
+                                                <option value="" disabled>Có, Tôi sẽ đến :3</option>
                                                 <option value="Có, Tôi sẽ đến :3">Có, Tôi sẽ đến :3</option>
                                                 <option value="Không, Tôi bận mất rồi :(">Không, Tôi bận mất rồi :(
                                                 </option>
@@ -5673,7 +5684,21 @@
                                     <div id="FORM_ITEM_LABEL13" class='ladi-element ladi-input-label'>
                                         <p class='ladi-headline'>Bạn đến mấy người?</p>
                                     </div>
-                                </div><button type="submit" class="ladi-hidden"></button>
+                                </div>
+                                <div id="FORM_ITEM14" class='ladi-element'>
+                                    <div class="ladi-form-item-container">
+                                        <div class="ladi-form-item-background"></div>
+                                        <div class='ladi-form-item'>
+                                            <input id="message" autocomplete="off" tabindex="7" name="message" required
+                                                class="ladi-form-control" type="text" placeholder="Nhập lời chúc"
+                                                value="" />
+                                        </div>
+                                    </div>
+                                    <div id="FORM_ITEM_LABEL12" class='ladi-element ladi-input-label'>
+                                        <p class='ladi-headline'>Gửi lời chúc đến cô dâu chú rể</p>
+                                    </div>
+                                </div>
+                                <button type="submit" class="ladi-hidden"></button>
                             </form>
                         </div>
                         <div data-action="true" id="BUTTON11" class='ladi-element'>
@@ -5704,6 +5729,7 @@
                             }
 
                             #wish-container {
+                                min-width: 350px;
                                 max-width: 400px;
                                 max-height: 612px;
                                 margin: 30px auto;
@@ -5756,7 +5782,7 @@
                             }
 
                             #wish-list {
-                                max-height: 300px;
+                                max-height: 475px;
                                 /* ❌ bỏ max-height */
                                 overflow-y: auto;
                                 padding: 10px;
@@ -5776,9 +5802,9 @@
                                 margin-bottom: 12px;
                                 padding: 12px 16px;
                                 border-radius: 12px;
-                                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+                                box-shadow: 0 2px 6px rgb(238 55 55 / 69%);
                                 animation: fadeIn 0.4s ease;
-                                border-left: 4px solid #d46a6a;
+
                             }
 
                             .wish-item strong {
@@ -5825,11 +5851,11 @@
 
                         <div id="wish-container">
                             <!-- Form nhập lời chúc -->
-                            <div id="wish-form">
+                            <!-- <div id="wish-form">
                                 <input id="name" type="text" placeholder="Tên của bạn">
                                 <input id="message" type="text" placeholder="Lời chúc">
                                 <button id="sendWishBtn">💌 Gửi</button>
-                            </div>
+                            </div> -->
 
                             <!-- Danh sách lời chúc -->
                             <div id="wish-list">
@@ -5846,113 +5872,113 @@
                         <script>
                             const API_URL = "https://script.google.com/macros/s/AKfycbzw8uyoqumlTQcErOhjoGZ5Pib1mGL6lX0_qMNi2Qt3bahIjk3rDmEKLIdYIP9pduQ/exec"; // 👉 thay bằng link API Google Sheet
 
-                            const urlLoiChuc = `https://script.google.com/macros/s/AKfycbwqI2rDyiHiFPCzS2xYz99a-QnrPA_im_fnuMvCmUhwrP0IpG9eyaqVOgpeG94Db3f8Sw/exec`;
+                            const urlLoiChuc = `https://script.google.com/macros/s/AKfycbwtYTUgdj0LJI_Efee5SKUSZ78qeU-PbRkMrvaDHliAbquBS4VicqDCG2gsF5_Pz9LCNw/exec`;
                             // Load danh sách lời chúc
-                            async function loadWishes() {
-                                const list = document.getElementById("wish-list");
-                                list.innerHTML = `<div id="loading-message">Đang tải lời chúc... 💬</div>`;
+                            // async function loadWishes() {
+                            //     const list = document.getElementById("wish-list");
+                            //     list.innerHTML = `<div id="loading-message">Đang tải lời chúc... 💬</div>`;
 
-                                try {
-                                    const res = await fetch(urlLoiChuc);
-                                    const wishes = await res.json();
-                                    console.log(22222, wishes)
+                            //     try {
+                            //         const res = await fetch(urlLoiChuc);
+                            //         const wishes = await res.json();
 
-                                    list.innerHTML = "";
+                            //         list.innerHTML = "";
 
-                                    wishes.reverse().forEach(wish => {
-                                        const div = document.createElement("div");
-                                        div.className = "wish-item";
-                                        div.innerHTML = `<strong>${wish.Title}</strong><span>${wish.Content}</span>`;
-                                        list.appendChild(div);
-                                    });
-                                } catch (err) {
-                                    list.innerHTML = `<div id="loading-message">Lỗi tải lời chúc 😢</div>`;
-                                    console.error("Lỗi load wishes:", err);
-                                }
-                            }
+                            //         wishes.reverse().forEach(wish => {
+                            //             const div = document.createElement("div");
+                            //             div.className = "wish-item";
+                            //             div.innerHTML = `<strong>${wish["Tên"]}</strong><span>${wish['Lời chúc']}</span>`;
+                            //             list.appendChild(div);
+                            //         });
+                            //     } catch (err) {
+                            //         list.innerHTML = `<div id="loading-message">Lỗi tải lời chúc 😢</div>`;
+                            //         console.error("Lỗi load wishes:", err);
+                            //     }
+                            // }
 
-                            // Gửi lời chúc
-                            async function sendWish() {
-                                const name = document.getElementById("name").value.trim();
-                                const message = document.getElementById("message").value.trim();
-                                if (!name || !message) {
-                                    alert("Nhập đầy đủ Tên và Lời chúc");
-                                    return;
-                                }
+                            // // Gửi lời chúc
+                            // async function sendWish(name, message) {
+                            //     const name = document.getElementById("name").value.trim();
+                            //     const message = document.getElementById("message").value.trim();
 
-                                const list = document.getElementById("wish-list");
-                                const div = document.createElement("div");
-                                div.className = "wish-item";
-                                div.innerHTML = `<strong>${name}</strong><span>${message}</span> <em>(đang gửi...)</em>`;
-                                list.prepend(div);
+                            //     if (!name || !message) {
+                            //         alert("Nhập đầy đủ Tên và Lời chúc");
+                            //         return;
+                            //     }
 
-                                const body = new URLSearchParams();
-                                body.append('name', name);
-                                body.append('message', message);
+                            //     const list = document.getElementById("wish-list");
+                            //     const div = document.createElement("div");
+                            //     div.className = "wish-item";
+                            //     div.innerHTML = `<strong>${name}</strong><span>${message}</span> <em>(đang gửi...)</em>`;
+                            //     list.prepend(div);
 
-                                try {
-                                    await fetch(API_URL, { method: "POST", body });
-                                    div.querySelector("em").remove();
-                                    showFireworks(); // 🎆 gọi pháo hoa
-                                } catch (err) {
-                                    div.querySelector("em").innerText = "(lỗi gửi)";
-                                }
+                            //     const body = new URLSearchParams();
+                            //     body.append('name', name);
+                            //     body.append('message', message);
 
-                                document.getElementById("name").value = "";
-                                document.getElementById("message").value = "";
+                            //     try {
+                            //         await fetch(API_URL, { method: "POST", body });
+                            //         div.querySelector("em").remove();
+                            //         showFireworks(); // 🎆 gọi pháo hoa
+                            //     } catch (err) {
+                            //         div.querySelector("em").innerText = "(lỗi gửi)";
+                            //     }
 
-                                //   setTimeout(loadWishes, 1000);
-                            }
+                            //     document.getElementById("name").value = "";
+                            //     document.getElementById("message").value = "";
 
-                            // Pháo hoa
-                            function showFireworks() {
-                                const container = document.getElementById("fireworks");
-                                const canvas = document.getElementById("fireworksCanvas");
-                                const ctx = canvas.getContext("2d");
+                            //     //   setTimeout(loadWishes, 1000);
+                            // }
 
-                                canvas.width = window.innerWidth;
-                                canvas.height = window.innerHeight;
-                                container.style.display = "block";
+                            // // Pháo hoa
+                            // function showFireworks() {
+                            //     const container = document.getElementById("fireworks");
+                            //     const canvas = document.getElementById("fireworksCanvas");
+                            //     const ctx = canvas.getContext("2d");
 
-                                const particles = [];
+                            //     canvas.width = window.innerWidth;
+                            //     canvas.height = window.innerHeight;
+                            //     container.style.display = "block";
 
-                                for (let i = 0; i < 100; i++) {
-                                    particles.push({
-                                        x: canvas.width / 2,
-                                        y: canvas.height / 2,
-                                        radius: Math.random() * 3 + 2,
-                                        color: `hsl(${Math.random() * 360}, 100%, 60%)`,
-                                        angle: Math.random() * 2 * Math.PI,
-                                        speed: Math.random() * 5 + 2,
-                                        alpha: 1
-                                    });
-                                }
+                            //     const particles = [];
 
-                                function animate() {
-                                    ctx.clearRect(0, 0, canvas.width, canvas.height);
-                                    particles.forEach(p => {
-                                        p.x += Math.cos(p.angle) * p.speed;
-                                        p.y += Math.sin(p.angle) * p.speed;
-                                        p.alpha -= 0.02;
-                                        ctx.beginPath();
-                                        ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI);
-                                        ctx.fillStyle = p.color;
-                                        ctx.globalAlpha = p.alpha;
-                                        ctx.fill();
-                                    });
-                                    ctx.globalAlpha = 1;
-                                    if (particles[0].alpha > 0) {
-                                        requestAnimationFrame(animate);
-                                    } else {
-                                        container.style.display = "none";
-                                    }
-                                }
+                            //     for (let i = 0; i < 100; i++) {
+                            //         particles.push({
+                            //             x: canvas.width / 2,
+                            //             y: canvas.height / 2,
+                            //             radius: Math.random() * 3 + 2,
+                            //             color: `hsl(${Math.random() * 360}, 100%, 60%)`,
+                            //             angle: Math.random() * 2 * Math.PI,
+                            //             speed: Math.random() * 5 + 2,
+                            //             alpha: 1
+                            //         });
+                            //     }
 
-                                animate();
-                            }
+                            //     function animate() {
+                            //         ctx.clearRect(0, 0, canvas.width, canvas.height);
+                            //         particles.forEach(p => {
+                            //             p.x += Math.cos(p.angle) * p.speed;
+                            //             p.y += Math.sin(p.angle) * p.speed;
+                            //             p.alpha -= 0.02;
+                            //             ctx.beginPath();
+                            //             ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI);
+                            //             ctx.fillStyle = p.color;
+                            //             ctx.globalAlpha = p.alpha;
+                            //             ctx.fill();
+                            //         });
+                            //         ctx.globalAlpha = 1;
+                            //         if (particles[0].alpha > 0) {
+                            //             requestAnimationFrame(animate);
+                            //         } else {
+                            //             container.style.display = "none";
+                            //         }
+                            //     }
+
+                            //     animate();
+                            // }
 
                             document.addEventListener("DOMContentLoaded", () => {
-                                document.getElementById("sendWishBtn").addEventListener("click", sendWish);
+                                document.getElementById("sendWishBtn")?.addEventListener("click", sendWish);
                                 loadWishes();
                             });
                         </script>
@@ -6016,36 +6042,6 @@
                 <div id="HEADLINE69" class='ladi-element'>
                     <h3 class='ladi-headline'>Sự hiện diện của bạn sẽ khiến hôn lễ của chúng tôi trở nên ý nghĩa hơn bao
                         giờ hết!<br></h3>
-                </div>
-                <div data-action="true" id="GROUP33" class='ladi-element'>
-                    <div class='ladi-group'>
-                        <div id="BOX22" class='ladi-element'>
-                            <div class='ladi-box ladi-transition'></div>
-                        </div><a href="https://www.tiktok.com/@nhacohyonline" target="_blank" id="SHAPE11"
-                            class='ladi-element'>
-                            <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
-                                    preserveAspectRatio="none" viewBox="0 0 32 32" class="" fill="#000">
-                                    <image href="https://w.ladicdn.com/ladiui/icons/social/tiktok-icon.svg" height="32"
-                                        width="32"></image>
-                                </svg></div>
-                        </a><a href="https://www.facebook.com/thiepcuoionlinenhacohy" target="_blank" id="SHAPE12"
-                            class='ladi-element'>
-                            <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
-                                    preserveAspectRatio="none" viewBox="0 0 32 32" class="" fill="#000">
-                                    <image href="https://w.ladicdn.com/ladiui/icons/social/facebook.svg" height="32"
-                                        width="32"></image>
-                                </svg></div>
-                        </a><a href="https://zalo.me/0397336324" target="_blank" id="SHAPE13" class='ladi-element'>
-                            <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
-                                    preserveAspectRatio="none" viewBox="0 0 32 32" class="" fill="#000">
-                                    <image href="https://w.ladicdn.com/ladiui/icons/social/zalo.svg" height="32"
-                                        width="32"></image>
-                                </svg></div>
-                        </a>
-                        <div id="HEADLINE71" class='ladi-element'>
-                            <h3 class='ladi-headline'>Thiệp cưới online - Nhà Có Hỷ<br></h3>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -6672,10 +6668,11 @@
         }
     </style>
     <script src="./ladipagev4.min.js" type="text/javascript"></script>
+    <script src="./index.js" type="text/javascript"></script>
     <script id="script_event_data"
-        type="application/json">{"HEADLINE3":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0.4s"},"HEADLINE4":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0.6s"},"HEADLINE5":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE6":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE7":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE8":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"1s"},"HEADLINE9":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"1.2s"},"HEADLINE10":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE11":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0s"},"BUTTON_TEXT2":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FORM_ITEM2":{"a":"form_item","bS":"text","bR":"Quý khách","bQ":2},"FORM2":{"option.dynamic_form_config":"&#123;&#34;configs&#34;:[],&#34;default_actions&#34;:[&#123;&#34;text_thankyou_value&#34;:&#34;Cảm ơn bạn đã quan tâm!&#34;,&#34;type&#34;:&#34;form_show_popup_default&#34;,&#34;no_delete&#34;:true&#125;]&#125;","a":"form","bM":true,"by":true,"bx":true,"D":"fadeInDown","A":"0.2s"},"HEADLINE12":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP1":{"a":"group","cs":[{"dr":"action","dw":"0397336324","a":"phone"}],"D":"tada","A":"1.5s"},"GROUP2":{"a":"group","cs":[{"dr":"action","dw":"HOPMUNGCUOI","a":"popup"}],"D":"tada","A":"1.5s"},"GROUP3":{"a":"group","cs":[{"dr":"action","dv":"_blank","a":"link"}],"D":"tada","A":"1.5s"},"GROUP5":{"a":"group","D":"bounceIn","A":"0.8s"},"GROUP6":{"a":"group","D":"fadeInDown","A":"1.4s"},"IMAGE3":{"a":"image","F":"tada","C":"1s"},"HEADLINE13":{"option.is_product_mapping_name_custom":true,"a":"headline"},"PARAGRAPH1":{"option.is_product_mapping_name_custom":true,"a":"paragraph"},"HEADLINE14":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON3":{"a":"button","cs":[{"dr":"action","dv":"_self","dw":"","a":"link"}]},"BUTTON_TEXT3":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON4":{"a":"button","cs":[{"dr":"action","dw":"","dL":"","a":"copy_clipboard"}]},"BUTTON_TEXT4":{"option.is_product_mapping_name_custom":true,"a":"headline"},"IMAGE4":{"a":"image","cs":[{"image_url_desktop":"","image_url_mobile":"","dr":"action","dC":"","dF":"image","a":"lightbox"}]},"BUTTON5":{"a":"button","cs":[{"dr":"action","dv":"_self","dw":"","a":"link"}]},"BUTTON_TEXT5":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON6":{"a":"button","cs":[{"dr":"action","dL":"","a":"copy_clipboard"}]},"BUTTON_TEXT6":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE19":{"option.is_product_mapping_name_custom":true,"a":"headline"},"IMAGE5":{"a":"image","cs":[{"image_url_desktop":"","image_url_mobile":"","dr":"action","dC":"","dF":"image","a":"lightbox"}]},"HEADLINE20":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0s"},"BOX9":{"a":"box","D":"fadeInLeft","A":"0.5s"},"HEADLINE21":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE22":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE23":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP11":{"a":"group","D":"fadeInRight","A":"0.8s"},"BOX11":{"a":"box","D":"fadeInRight","A":"1.2s"},"HEADLINE24":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE25":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE26":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP14":{"a":"group","D":"fadeInLeft","A":"1.4s"},"HEADLINE27":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0s"},"HEADLINE28":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0.2s"},"SHAPE5":{"a":"shape","F":"pulse","C":"1s"},"SHAPE6":{"a":"shape","F":"pulse","C":"0.5s"},"COUNTDOWN_ITEM1":{"a":"countdown_item","bY":"day"},"COUNTDOWN_ITEM2":{"a":"countdown_item","bY":"hour"},"COUNTDOWN_ITEM3":{"a":"countdown_item","bY":"minute"},"COUNTDOWN_ITEM4":{"a":"countdown_item","bY":"seconds"},"COUNTDOWN1":{"a":"countdown","bX":"endtime","bT":1764320400000},"HEADLINE29":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE30":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE31":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE32":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP16":{"a":"group","F":"fadeInDown","C":"0.8s"},"HEADLINE33":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE34":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE35":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE36":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE37":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE38":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE39":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP19":{"a":"group","cs":[{"dr":"action","dv":"_blank","a":"link"}]},"GROUP20":{"a":"group","cs":[{"dr":"action","a":"phone"}]},"GROUP21":{"a":"group","D":"fadeInDown","A":"1.3s"},"HEADLINE40":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE41":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE42":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE43":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE44":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE45":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE46":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP25":{"a":"group","cs":[{"dr":"action","dv":"_blank","a":"link"}]},"GROUP26":{"a":"group","cs":[{"dr":"action","a":"phone"}]},"GROUP22":{"a":"group","D":"fadeInDown","A":"1.9s"},"HEADLINE47":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0s"},"IMAGE9":{"a":"image","D":"fadeInLeft","A":"0.3s"},"HEADLINE48":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE49":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE50":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP27":{"a":"group","D":"fadeInRight","A":"0.3s"},"IMAGE10":{"a":"image","D":"fadeInRight","A":"0.6s"},"HEADLINE51":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE52":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE53":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP28":{"a":"group","D":"fadeInLeft","A":"0.6s"},"IMAGE11":{"a":"image","D":"fadeInLeft","A":"0.9s"},"HEADLINE54":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE55":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE56":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP29":{"a":"group","D":"fadeInRight","A":"0.9s"},"HEADLINE57":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE58":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE59":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP30":{"a":"group","D":"fadeInLeft","A":"1.2s"},"IMAGE12":{"a":"image","D":"fadeInRight","A":"1.2s"},"HEADLINE60":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0s"},"IMAGE13":{"a":"image","D":"fadeInLeft","A":"0.2s"},"IMAGE14":{"a":"image","D":"fadeInRight","A":"0.2s"},"IMAGE15":{"a":"image","D":"fadeInLeft","A":"0.4s"},"IMAGE16":{"a":"image","D":"fadeInRight","A":"0.4s"},"IMAGE17":{"a":"image","D":"fadeInLeft","A":"0.6s"},"IMAGE18":{"a":"image","D":"fadeInRight","A":"0.6s"},"IMAGE19":{"a":"image","D":"fadeInLeft","A":"0.8s"},"IMAGE20":{"a":"image","D":"fadeInRight","A":"0.8s"},"BUTTON_TEXT8":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON8":{"a":"button","cs":[{"dr":"action","dw":"ALBUM","a":"popup"}],"D":"pulse","A":"1s"},"GALLERY1":{"a":"gallery","ah":true,"ae":5},"HOPMUNGCUOI":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"ALBUM":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"HEADLINE62":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0s"},"BUTTON_TEXT9":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FORM_ITEM3":{"a":"form_item","bS":"text","bQ":1},"FORM_ITEM6":{"a":"form_item","bS":"textarea","bQ":4},"FORM3":{"option.dynamic_form_config":"&#123;&#34;configs&#34;:[],&#34;default_actions&#34;:[&#123;&#34;text_thankyou_value&#34;:&#34;Cảm ơn bạn đã quan tâm!&#34;,&#34;type&#34;:&#34;form_open_popup&#34;,&#34;no_delete&#34;:true,&#34;id_open_popup&#34;:&#34;TKS&#34;&#125;]&#125;","a":"form","bP":"68a9937b23d7440012a8debf","bM":true,"by":true,"bx":true,"D":"bounceIn","A":"0.4s"},"HEADLINE64":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0s"},"HEADLINE65":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0.3s"},"BUTTON_TEXT10":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FORM_ITEM7":{"a":"form_item","bS":"text","bQ":1},"FORM4":{"option.dynamic_form_config":"&#123;&#34;configs&#34;:[],&#34;default_actions&#34;:[&#123;&#34;text_thankyou_value&#34;:&#34;Cảm ơn bạn đã quan tâm!&#34;,&#34;type&#34;:&#34;form_open_popup&#34;,&#34;no_delete&#34;:true,&#34;id_open_popup&#34;:&#34;TKS&#34;&#125;]&#125;","a":"form","bP":"68a99368f05fbb0012f681ba","bM":true,"by":true,"bx":true},"FORM_ITEM11":{"a":"form_item","bS":"radio","bQ":2},"FORM_ITEM_LABEL7":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FORM_ITEM_LABEL11":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FORM_ITEM12":{"a":"form_item","bS":"select","bQ":3},"FORM_ITEM_LABEL12":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE66":{"option.is_product_mapping_name_custom":true,"a":"headline","F":"fadeInDown","C":"0s"},"HEADLINE67":{"option.is_product_mapping_name_custom":true,"a":"headline"},"TKS":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"FORM_ITEM13":{"a":"form_item","bS":"number","bQ":4},"FORM_ITEM_LABEL13":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON_TEXT11":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON11":{"a":"button","cs":[{"dr":"action","dw":"HOPMUNGCUOI","a":"popup"}]},"HEADLINE68":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0s"},"HEADLINE69":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0.4s"},"SHAPE11":{"a":"shape","cs":[{"dr":"action","dv":"_blank","dw":"https://www.tiktok.com/@nhacohyonline","a":"link"}]},"SHAPE12":{"a":"shape","cs":[{"dr":"action","dv":"_blank","dw":"https://www.facebook.com/thiepcuoionlinenhacohy","a":"link"}]},"SHAPE13":{"a":"shape","cs":[{"dr":"action","dv":"_blank","dw":"https://zalo.me/0397336324","a":"link"}]},"HEADLINE71":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE72":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE73":{"option.is_product_mapping_name_custom":true,"a":"headline"}}</script>
+        type="application/json">{"HEADLINE3":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0.4s"},"HEADLINE4":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0.6s"},"HEADLINE5":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE6":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE7":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE8":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"1s"},"HEADLINE9":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"1.2s"},"HEADLINE10":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE11":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0s"},"BUTTON_TEXT2":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FORM_ITEM2":{"a":"form_item","bS":"text","bR":"Quý khách","bQ":2},"FORM2":{"option.dynamic_form_config":"&#123;&#34;configs&#34;:[],&#34;default_actions&#34;:[&#123;&#34;text_thankyou_value&#34;:&#34;Cảm ơn bạn đã quan tâm!&#34;,&#34;type&#34;:&#34;form_show_popup_default&#34;,&#34;no_delete&#34;:true&#125;]&#125;","a":"form","bM":true,"by":true,"bx":true,"D":"fadeInDown","A":"0.2s"},"HEADLINE12":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP1":{"a":"group","cs":[{"dr":"action","dw":"0397336324","a":"phone"}],"D":"tada","A":"1.5s"},"GROUP2":{"a":"group","cs":[{"dr":"action","dw":"HOPMUNGCUOI","a":"popup"}],"D":"tada","A":"1.5s"},"GROUP3":{"a":"group","cs":[{"dr":"action","dv":"_blank","a":"link"}],"D":"tada","A":"1.5s"},"GROUP5":{"a":"group","D":"bounceIn","A":"0.8s"},"GROUP6":{"a":"group","D":"fadeInDown","A":"1.4s"},"IMAGE3":{"a":"image","F":"tada","C":"1s"},"HEADLINE13":{"option.is_product_mapping_name_custom":true,"a":"headline"},"PARAGRAPH1":{"option.is_product_mapping_name_custom":true,"a":"paragraph"},"HEADLINE14":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON3":{"a":"button","cs":[{"dr":"action","dv":"_self","dw":"","a":"link"}]},"BUTTON_TEXT3":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON4":{"a":"button","cs":[{"dr":"action","dw":"","dL":"","a":"copy_clipboard"}]},"BUTTON_TEXT4":{"option.is_product_mapping_name_custom":true,"a":"headline"},"IMAGE4":{"a":"image","cs":[{"image_url_desktop":"","image_url_mobile":"","dr":"action","dC":"","dF":"image","a":"lightbox"}]},"BUTTON5":{"a":"button","cs":[{"dr":"action","dv":"_self","dw":"","a":"link"}]},"BUTTON_TEXT5":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON6":{"a":"button","cs":[{"dr":"action","dL":"","a":"copy_clipboard"}]},"BUTTON_TEXT6":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE19":{"option.is_product_mapping_name_custom":true,"a":"headline"},"IMAGE5":{"a":"image","cs":[{"image_url_desktop":"","image_url_mobile":"","dr":"action","dC":"","dF":"image","a":"lightbox"}]},"HEADLINE20":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0s"},"BOX9":{"a":"box","D":"fadeInLeft","A":"0.5s"},"HEADLINE21":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE22":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE23":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP11":{"a":"group","D":"fadeInRight","A":"0.8s"},"BOX11":{"a":"box","D":"fadeInRight","A":"1.2s"},"HEADLINE24":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE25":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE26":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP14":{"a":"group","D":"fadeInLeft","A":"1.4s"},"HEADLINE27":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0s"},"HEADLINE28":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0.2s"},"SHAPE5":{"a":"shape","F":"pulse","C":"1s"},"SHAPE6":{"a":"shape","F":"pulse","C":"0.5s"},"COUNTDOWN_ITEM1":{"a":"countdown_item","bY":"day"},"COUNTDOWN_ITEM2":{"a":"countdown_item","bY":"hour"},"COUNTDOWN_ITEM3":{"a":"countdown_item","bY":"minute"},"COUNTDOWN_ITEM4":{"a":"countdown_item","bY":"seconds"},"COUNTDOWN1":{"a":"countdown","bX":"endtime","bT":1764320400000},"HEADLINE29":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE30":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE31":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE32":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP16":{"a":"group","F":"fadeInDown","C":"0.8s"},"HEADLINE33":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE34":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE35":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE36":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE37":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE38":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE39":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP19":{"a":"group","cs":[{"dr":"action","dv":"_blank","a":"link"}]},"GROUP20":{"a":"group","cs":[{"dr":"action","a":"phone"}]},"GROUP21":{"a":"group","D":"fadeInDown","A":"1.3s"},"HEADLINE40":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE41":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE42":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE43":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE44":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE45":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE46":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP25":{"a":"group","cs":[{"dr":"action","dv":"_blank","a":"link"}]},"GROUP26":{"a":"group","cs":[{"dr":"action","a":"phone"}]},"GROUP22":{"a":"group","D":"fadeInDown","A":"1.9s"},"HEADLINE47":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0s"},"IMAGE9":{"a":"image","D":"fadeInLeft","A":"0.3s"},"HEADLINE48":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE49":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE50":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP27":{"a":"group","D":"fadeInRight","A":"0.3s"},"IMAGE10":{"a":"image","D":"fadeInRight","A":"0.6s"},"HEADLINE51":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE52":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE53":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP28":{"a":"group","D":"fadeInLeft","A":"0.6s"},"IMAGE11":{"a":"image","D":"fadeInLeft","A":"0.9s"},"HEADLINE54":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE55":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE56":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP29":{"a":"group","D":"fadeInRight","A":"0.9s"},"HEADLINE57":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE58":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE59":{"option.is_product_mapping_name_custom":true,"a":"headline"},"GROUP30":{"a":"group","D":"fadeInLeft","A":"1.2s"},"IMAGE12":{"a":"image","D":"fadeInRight","A":"1.2s"},"HEADLINE60":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0s"},"IMAGE13":{"a":"image","D":"fadeInLeft","A":"0.2s"},"IMAGE14":{"a":"image","D":"fadeInRight","A":"0.2s"},"IMAGE15":{"a":"image","D":"fadeInLeft","A":"0.4s"},"IMAGE16":{"a":"image","D":"fadeInRight","A":"0.4s"},"IMAGE17":{"a":"image","D":"fadeInLeft","A":"0.6s"},"IMAGE18":{"a":"image","D":"fadeInRight","A":"0.6s"},"IMAGE19":{"a":"image","D":"fadeInLeft","A":"0.8s"},"IMAGE20":{"a":"image","D":"fadeInRight","A":"0.8s"},"BUTTON_TEXT8":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON8":{"a":"button","cs":[{"dr":"action","dw":"ALBUM","a":"popup"}],"D":"pulse","A":"1s"},"GALLERY1":{"a":"gallery","ah":true,"ae":5},"HOPMUNGCUOI":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"ALBUM":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"HEADLINE62":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0s"},"BUTTON_TEXT9":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FORM_ITEM3":{"a":"form_item","bS":"text","bQ":1},"FORM_ITEM6":{"a":"form_item","bS":"textarea","bQ":4},"FORM3":{"option.dynamic_form_config":"&#123;&#34;configs&#34;:[],&#34;default_actions&#34;:[&#123;&#34;text_thankyou_value&#34;:&#34;Cảm ơn bạn đã quan tâm!&#34;,&#34;type&#34;:&#34;form_open_popup&#34;,&#34;no_delete&#34;:true,&#34;id_open_popup&#34;:&#34;TKS&#34;&#125;]&#125;","a":"form","bP":"68a9937b23d7440012a8debf","bM":true,"by":true,"bx":true,"D":"bounceIn","A":"0.4s"},"HEADLINE64":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0s"},"HEADLINE65":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0.3s"},"BUTTON_TEXT10":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FORM_ITEM7":{"a":"form_item","bS":"text","bQ":1},"FORM4":{"option.dynamic_form_config":"&#123;&#34;configs&#34;:[],&#34;default_actions&#34;:[&#123;&#34;text_thankyou_value&#34;:&#34;Cảm ơn bạn đã quan tâm!&#34;,&#34;type&#34;:&#34;form_open_popup&#34;,&#34;no_delete&#34;:true,&#34;id_open_popup&#34;:&#34;TKS&#34;&#125;]&#125;","a":"form","bP":"68a99368f05fbb0012f681ba11","bM":true,"by":true,"bx":true},"FORM_ITEM11":{"a":"form_item","bS":"radio","bQ":2},"FORM_ITEM_LABEL7":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FORM_ITEM_LABEL11":{"option.is_product_mapping_name_custom":true,"a":"headline"},"FORM_ITEM12":{"a":"form_item","bS":"select","bQ":3},"FORM_ITEM_LABEL12":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE66":{"option.is_product_mapping_name_custom":true,"a":"headline","F":"fadeInDown","C":"0s"},"HEADLINE67":{"option.is_product_mapping_name_custom":true,"a":"headline"},"TKS":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"FORM_ITEM13":{"a":"form_item","bS":"number","bQ":4},"FORM_ITEM_LABEL13":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON_TEXT11":{"option.is_product_mapping_name_custom":true,"a":"headline"},"BUTTON11":{"a":"button","cs":[{"dr":"action","dw":"HOPMUNGCUOI","a":"popup"}]},"HEADLINE68":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0s"},"HEADLINE69":{"option.is_product_mapping_name_custom":true,"a":"headline","D":"fadeInDown","A":"0.4s"},"SHAPE11":{"a":"shape","cs":[{"dr":"action","dv":"_blank","dw":"https://www.tiktok.com/@nhacohyonline","a":"link"}]},"SHAPE12":{"a":"shape","cs":[{"dr":"action","dv":"_blank","dw":"https://www.facebook.com/thiepcuoionlinenhacohy","a":"link"}]},"SHAPE13":{"a":"shape","cs":[{"dr":"action","dv":"_blank","dw":"https://zalo.me/0397336324","a":"link"}]},"HEADLINE71":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE72":{"option.is_product_mapping_name_custom":true,"a":"headline"},"HEADLINE73":{"option.is_product_mapping_name_custom":true,"a":"headline"}}</script>
     <script id="script_ladipage_run"
-        type="text/javascript">(function () { var run = function () { if (typeof window.LadiPageScript == "undefined" || typeof window.ladi == "undefined" || window.ladi == undefined) { setTimeout(run, 100); return; } window.LadiPageApp = window.LadiPageApp || new window.LadiPageAppV2(); window.LadiPageScript.runtime.ladipage_id = '68a9695f23d7440012a47af3'; window.LadiPageScript.runtime.publish_platform = 'LADIPAGEDNS'; window.LadiPageScript.runtime.is_mobile_only = true; window.LadiPageScript.runtime.version = '1761286499764'; window.LadiPageScript.runtime.cdn_url = 'https://w.ladicdn.com/v5/source/'; window.LadiPageScript.runtime.DOMAIN_SET_COOKIE = ["nhacohy.vn"]; window.LadiPageScript.runtime.DOMAIN_FREE = ["preview.ldpdemo.com", "ldp.page"]; window.LadiPageScript.runtime.bodyFontSize = 12; window.LadiPageScript.runtime.store_id = "689218c23c46d40012eac1e2"; window.LadiPageScript.runtime.store_ladiuid = "689218c05120b6001245e6cd"; window.LadiPageScript.runtime.time_zone = 7; window.LadiPageScript.runtime.currency = "VND"; window.LadiPageScript.runtime.convert_replace_str = true; window.LadiPageScript.runtime.desktop_width = 960; window.LadiPageScript.runtime.mobile_width = 420; window.LadiPageScript.runtime.formdata = true; window.LadiPageScript.runtime.tracking_button_click = true; window.LadiPageScript.runtime.publish_time = 1761376249932; window.LadiPageScript.runtime.lang = "vi"; window.LadiPageScript.run(true); window.LadiPageScript.runEventScroll(); }; run(); })();</script>
+        type="text/javascript">(function () { var run = function () { if (typeof window.LadiPageScript == "undefined" || typeof window.ladi == "undefined" || window.ladi == undefined) { setTimeout(run, 100); return; } window.LadiPageApp = window.LadiPageApp || new window.LadiPageAppV2(); window.LadiPageScript.runtime.ladipage_id = '68a9695f23d7440012a47af311'; window.LadiPageScript.runtime.publish_platform = 'LADIPAGEDNS'; window.LadiPageScript.runtime.is_mobile_only = true; window.LadiPageScript.runtime.version = '1761286499764'; window.LadiPageScript.runtime.cdn_url = 'https://w.ladicdn.com/v5/source/'; window.LadiPageScript.runtime.DOMAIN_SET_COOKIE = ["nhacohy.vn"]; window.LadiPageScript.runtime.DOMAIN_FREE = ["preview.ldpdemo.com", "ldp.page"]; window.LadiPageScript.runtime.bodyFontSize = 12; window.LadiPageScript.runtime.store_id = "689218c23c46d40012eac1e2"; window.LadiPageScript.runtime.store_ladiuid = "689218c05120b6001245e6cd"; window.LadiPageScript.runtime.time_zone = 7; window.LadiPageScript.runtime.currency = "VND"; window.LadiPageScript.runtime.convert_replace_str = true; window.LadiPageScript.runtime.desktop_width = 960; window.LadiPageScript.runtime.mobile_width = 420; window.LadiPageScript.runtime.formdata = true; window.LadiPageScript.runtime.tracking_button_click = true; window.LadiPageScript.runtime.publish_time = 1761376249932; window.LadiPageScript.runtime.lang = "vi"; window.LadiPageScript.run(true); window.LadiPageScript.runEventScroll(); }; run(); })();</script>
 </body>
 
 </html><!--Publish time: Sat, 25 Oct 2025 07:10:50 GMT--><!--LadiPage build time: Fri, 24 Oct 2025 06:14:59 GMT-->
